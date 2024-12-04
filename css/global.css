@@ -1,0 +1,62 @@
+body {
+  margin: 0px;
+  font-family: "Montserrat",Arial, Helvetica, sans-serif;
+  color: #080822;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.trajan {
+  font-family: "Trajan PRO Regular";
+}
+
+.trajan-extra {
+  font-family: "Trajan PRO Bold";
+}
+
+.subtitulo {
+  font-size: 8rem;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase; 
+  max-width: 4ch;
+}
+.subtitulo1 {
+  font-size: 8rem;
+  line-height: 1;
+  word-break: break-all;
+  text-transform: uppercase; 
+  max-width: 4.5ch;
+}
+
+@media(max-width:1150px) {
+  .subtitulo {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+  .subtitulo1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    max-width: initial;
+  }
+}
+
+
+

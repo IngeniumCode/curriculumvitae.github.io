@@ -1,0 +1,139 @@
+.introduçao {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  gap: 200px;
+  margin-bottom: 150px;
+}
+
+.introduçao div {
+  justify-self: end;
+  grid-row: 2;
+}
+
+.introduçao h1 {
+  position: relative;
+  font-size: 4.5rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  margin-bottom: 5px;
+  margin-right: 80px;
+}
+
+.introduçao::before {
+  margin: 0px;
+  top: 80px;
+  right: 15px;
+ content: "";
+ display: block;
+ width: 500px;
+ height: 500px;
+ background: url(../img/Ellipse\ 1.svg) no-repeat center;
+ position: absolute;
+ z-index: -1;
+}
+
+.introduçao h1::before {
+  top: 12px;
+  left: 5px;
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 7px;
+  border-radius: 5px;
+  background: #fdd697;
+  z-index: -1;
+}
+
+.introduçao p::before {
+  content: "";
+  top: 20px;
+  left: 0px;
+  position: absolute;
+  width: 25px;
+  height: 5px;
+  border-radius: 5px;
+  background: #fdd697;
+  z-index: -1;
+}
+
+.introduçao p {
+  position: relative;
+  font-size: 1.25rem;
+  letter-spacing: 0.5px;
+  color: #080822;
+}
+
+@media(max-width:800px){
+  .introduçao {
+    gap: 100px;
+    margin-bottom: 50px;
+  }
+  .introduçao h1 {
+    color: #080822;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    margin-right: 40px;
+  }
+  .introduçao p {
+    font-size: 0.875rem;
+  }
+  .introduçao::before {
+    background: url(../img/Ellipse\ 2.svg) no-repeat center;
+    right: 40px;
+    width: 250px;
+    height: 250px;
+  }
+.introduçao h1::before {
+  width: 20px;
+  left: 3px;
+}
+.introduçao p::before{
+  top: 15px;
+  width: 18px;
+}
+}
+
+@media(max-width:620px) {
+  .introduçao h1 {
+    font-size: 2.5rem;
+  }
+  .introduçao::before {
+    top: 100px;
+    right: 40px;
+    background: url(../img/Ellipse\ 3.svg) no-repeat center;
+    width: 200px;
+    height: 200px;
+  }
+  .introduçao h1::before{
+    top: 10px;
+    width: 15px;
+  }
+}
+
+@media(max-width:500px){
+  .introduçao {
+    gap: 80px;
+  }
+  .introduçao h1 {
+    font-size: 2rem;   
+  }
+  .introduçao::before {
+    top: 95px;
+    right: 40px;
+    background: url(../img/Ellipse\ 4.svg) no-repeat center;
+    width: 150px;
+    height: 150px;
+  }
+  .introduçao h1::before {
+    left: 2px;
+    top: 8px;
+    height: 4px;
+  }
+}
+
+
+
