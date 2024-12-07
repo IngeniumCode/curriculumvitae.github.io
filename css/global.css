@@ -1,6 +1,16 @@
+@font-face {
+  font-family: "trajan-pro";
+  src: url("/trajan-pro/TrajanPro-Bold.otf") format("opentype"),
+    url("/trajan-pro/TrajanPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: "trajan-pro", sans-serif;
+}
 body {
   margin: 0px;
-  font-family: "Montserrat",Arial, Helvetica, sans-serif;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: #080822;
 }
 
@@ -34,18 +44,18 @@ img {
   font-size: 8rem;
   line-height: 1;
   word-break: break-all;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   max-width: 4ch;
 }
 .subtitulo1 {
   font-size: 8rem;
   line-height: 1;
   word-break: break-all;
-  text-transform: uppercase; 
+  text-transform: uppercase;
   max-width: 4.5ch;
 }
 
-@media(max-width:1150px) {
+@media (max-width: 1150px) {
   .subtitulo {
     font-size: 3rem;
     text-transform: capitalize;
@@ -57,6 +67,3 @@ img {
     max-width: initial;
   }
 }
-
-
-
